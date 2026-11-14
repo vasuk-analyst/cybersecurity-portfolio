@@ -1,0 +1,14 @@
+# Keep lab secrets and raw evidence out of Git
+*.ovpn
+air.cookies
+*.cookie
+*token*
+*flag*
+screenshots/raw/
+evidence/raw/
+
+# Local terminal and capture files
+*.tmp
+*.log
+*.pcap
+*.pcapng
