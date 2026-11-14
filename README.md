@@ -12,3 +12,6 @@ The screenshot is cropped to show the VM resource group and `Stopped (deallocate
 
 The investigation summary records 924 failed logon events (4625), two source IPs reviewed, Logon Type 3 in reviewed events, no matching 4624 in the queried window, and Sentinel case #1899. It does not claim confirmed compromise or confirmed RDP attribution. A missing 4624 in a queried window is not proof that no successful access occurred outside that query's time or collection scope.
 
+## Additional Security Project
+
+- [HTB DutyBound — Non-Spoiler Project Summary](htb-dutybound/README.md): an authorized lab assessment presented through a defensive-security lens, with SOC detection ideas clearly identified as proposals. Full machine-specific solution details are intentionally excluded while the content is active.
