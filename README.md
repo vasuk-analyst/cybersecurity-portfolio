@@ -1,26 +1,22 @@
 # Security Portfolio
 
-Hands-on security projects focused on **Security Operations (SOC)**, investigation, and defensive thinking. This repository brings my project work together in one place.
+Hands-on security projects focused on **Security Operations (SOC)**, investigation, and defensive thinking. This repository brings my current project work together in one place.
 
-## Featured projects
+## Projects
 
-### SOC and detection
+### Azure Honeypot & Microsoft Sentinel
 
-**[Azure Honeypot & Microsoft Sentinel](index.html)**  
 End-to-end Azure lab covering Windows authentication telemetry, Azure Monitor Agent, Data Collection Rules, Log Analytics, KQL, Sentinel alert triage, and evidence-led case documentation.
 
 - Reviewed 924 failed logon events (Event ID 4625) and examined two source IPs.
 - Documented the limits of the investigation; no successful compromise or RDP activity is claimed.
 - [View the case study](index.html)
 
-### Security assessment labs
+### HTB DutyBound
 
-**[HTB DutyBound](htb-dutybound/README.md)**  
 Authorized Hack The Box lab summary covering enumeration, web and host assessment, evidence handling, remediation themes, and general SOC monitoring hypotheses. No walkthrough, flags, or deployed SIEM detections are claimed.
 
-## GRC
-
-I have not added a GRC case study to this portfolio yet. As I complete GRC work, I will add it here with its scope, method, findings, and evidence clearly described. Possible future areas include risk assessment, control mapping, third-party risk, and business continuity.
+- [View the project summary](htb-dutybound/README.md)
 
 ## Repository layout
 
