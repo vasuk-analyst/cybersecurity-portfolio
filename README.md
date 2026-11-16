@@ -1,39 +1,36 @@
-# Security Portfolio
+# Cybersecurity Portfolio
 
-Hands-on security projects focused on **Security Operations (SOC)**, investigation, and defensive thinking. This repository brings my current project work together in one place.
+My current portfolio contains two security projects: one SOC lab and one university security assessment.
 
 ## Projects
 
-### Azure Honeypot & Microsoft Sentinel
+### SOC
 
-End-to-end Azure lab covering Windows authentication telemetry, Azure Monitor Agent, Data Collection Rules, Log Analytics, KQL, Sentinel alert triage, and evidence-led case documentation.
+**[Azure Honeypot and Microsoft Sentinel](soc/azure-honeypot-sentinel/README.md)**  
+An Azure lab documenting Windows authentication telemetry, Log Analytics, KQL, Sentinel alert triage, and evidence-led investigation.
 
-- Reviewed 924 failed logon events (Event ID 4625) and examined two source IPs.
-- Documented the limits of the investigation; no successful compromise or RDP activity is claimed.
-- [View the case study](index.html)
+### University project
 
-### HTB DutyBound
-
-Authorized Hack The Box lab summary covering enumeration, web and host assessment, evidence handling, remediation themes, and general SOC monitoring hypotheses. No walkthrough, flags, or deployed SIEM detections are claimed.
-
-- [View the project summary](htb-dutybound/README.md)
+**[HTB DutyBound Penetration Test](university-projects/dutybound-penetration-test/README.md)**  
+A university group-assignment case study of an authorized Hack The Box assessment. The report presents the scope, methodology, findings, evidence, and remediation recommendations. It avoids publishing flags and reusable exploit details.
 
 ## Repository layout
 
 ```text
-soc-analyst-portfolio/
+cybersecurity-portfolio/
 ├── README.md
-├── index.html                 # Azure honeypot and Sentinel case study
-├── azure-vm-status.png        # Sanitized lab evidence
-└── htb-dutybound/
-    ├── README.md              # Non-spoiler project summary
-    └── screenshots/           # Reserved for sanitized evidence
+├── index.html
+├── soc/
+│   └── azure-honeypot-sentinel/
+│       ├── README.md
+│       ├── index.html
+│       └── azure-vm-status.png
+└── university-projects/
+    └── dutybound-penetration-test/
+        ├── README.md
+        ├── .gitignore
+        └── screenshots/
+            └── README.md
 ```
 
-## How I present project work
-
-Each project should explain its objective, my contribution, environment and tools, process, evidence, findings, limitations, and lessons learned. Only sanitized or synthetic data should be published. Never include credentials, personal data, private logs, or confidential organizational material.
-
-## Contact
-
-- GitHub: [@vasuk-analyst](https://github.com/vasuk-analyst)
+I’ll add other sections when I have projects to include in them.
