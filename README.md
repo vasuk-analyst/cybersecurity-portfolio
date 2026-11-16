@@ -1,17 +1,43 @@
-# SOC Analyst Portfolio — Azure Honeypot & Microsoft Sentinel
+# Security Portfolio
 
-Open `index.html` to view the responsive SOC case study. It documents Azure VM provisioning, AMA/DCR log collection, Log Analytics, KQL, Sentinel alert triage, findings, limitations, and safe deallocation.
+Hands-on security projects focused on **Security Operations (SOC)**, investigation, and defensive thinking. This repository brings my project work together in one place.
 
-## Publish with GitHub Pages
+## Featured projects
 
-Upload these three files to the repository root: `index.html`, `README.md`, and `azure-vm-status.png`. Then open **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, and save.
+### SOC and detection
 
-## Evidence and interpretation
+**[Azure Honeypot & Microsoft Sentinel](index.html)**  
+End-to-end Azure lab covering Windows authentication telemetry, Azure Monitor Agent, Data Collection Rules, Log Analytics, KQL, Sentinel alert triage, and evidence-led case documentation.
 
-The screenshot is cropped to show the VM resource group and `Stopped (deallocated)` status. Account, subscription and network values are excluded. No Sentinel or KQL screenshots were available in the source files.
+- Reviewed 924 failed logon events (Event ID 4625) and examined two source IPs.
+- Documented the limits of the investigation; no successful compromise or RDP activity is claimed.
+- [View the case study](index.html)
 
-The investigation summary records 924 failed logon events (4625), two source IPs reviewed, Logon Type 3 in reviewed events, no matching 4624 in the queried window, and Sentinel case #1899. It does not claim confirmed compromise or confirmed RDP attribution. A missing 4624 in a queried window is not proof that no successful access occurred outside that query's time or collection scope.
+### Security assessment labs
 
-## Additional Security Project
+**[HTB DutyBound](htb-dutybound/README.md)**  
+Authorized Hack The Box lab summary covering enumeration, web and host assessment, evidence handling, remediation themes, and general SOC monitoring hypotheses. No walkthrough, flags, or deployed SIEM detections are claimed.
 
-- [HTB DutyBound — Non-Spoiler Project Summary](htb-dutybound/README.md): an authorized lab assessment presented through a defensive-security lens, with SOC detection ideas clearly identified as proposals. Full machine-specific solution details are intentionally excluded while the content is active.
+## GRC
+
+I have not added a GRC case study to this portfolio yet. As I complete GRC work, I will add it here with its scope, method, findings, and evidence clearly described. Possible future areas include risk assessment, control mapping, third-party risk, and business continuity.
+
+## Repository layout
+
+```text
+soc-analyst-portfolio/
+├── README.md
+├── index.html                 # Azure honeypot and Sentinel case study
+├── azure-vm-status.png        # Sanitized lab evidence
+└── htb-dutybound/
+    ├── README.md              # Non-spoiler project summary
+    └── screenshots/           # Reserved for sanitized evidence
+```
+
+## How I present project work
+
+Each project should explain its objective, my contribution, environment and tools, process, evidence, findings, limitations, and lessons learned. Only sanitized or synthetic data should be published. Never include credentials, personal data, private logs, or confidential organizational material.
+
+## Contact
+
+- GitHub: [@vasuk-analyst](https://github.com/vasuk-analyst)
